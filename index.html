@@ -1,145 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>N C Gowtham Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        .main-content {
-            padding: 20px;
-            background: #fff;
-            margin-top: 20px;
-        }
-        .main-content h2 {
-            color: #333;
-        }
-        .main-content p {
-            line-height: 1.6em;
-        }
-        .main-content .section {
-            margin-bottom: 20px;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <h1>N C Gowtham</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#languages">Languages</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#additional-info">Additional Info</a></li>
-                </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>RESPONSIVE PERSONAL PORTFOLIO WEBSITE </title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!--body-->
+        <header class="header">
+            <a href="#" class="logo">Portfolio</a>
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">ABOUT</a>
+                <a href="#services">SKILLS</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#contact">CONTACT</a>
             </nav>
-        </div>
-    </header>
+        </header>
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hello,It's Me</h3>
+                <h1>Gagan <span>K</span></h1>
+                <h3>And I'm a <span class="multiple-text"></span></h3>
+                <div class="social-media">
+                    <a href="https://github.com/Gagan7411082471"><i class='bx bxl-github'></i></a>
+                    <a href="mailto:gagankgagank672@gmail.com"><i class='bx bxs-envelope'></i></a>
+                    <a href="https://www.instagram.com/gagangowda1430"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.linkedin.com/in/gagan-k-6689762b5"><i class='bx bxl-linkedin-square' ></i></a>
+                </div>
+                <button class="btn" onclick="window.open('resume.pdf','_blank')">View Resume</button>
+            </div>
+            <div class="home-img">
+                <img src="image/p3.avif" alt="">
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="image/gagan.jpg" alt="">
+            </div>
+            <div class="about-content">
+                <h2 class="heading">About<span>Me</span></h2>
+                <p>Hello! I'm currently pursuing a Bachelor of Engineering (BE) in Computer Science and Engineering. With a strong foundation in programming languages like C and C++, along with skills in HTML, CSS, and JavaScript, I'm passionate about building functional, user-friendly applications. I’m especially interested in web development and continuously expanding my skill set to bring creative solutions to life. I'm open to learning opportunities, freelance projects, and collaborations that will help me grow further in the tech industry. Feel free to connect with me </p>
+                 <a href="#"class="btn">Read More</a>   
+            </div>
+        </section>
+        <section class="services"id="services">
+            <h2 class="heading">My<span>Skills</span></h2>
 
-    <div class="container main-content">
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p>#1-154 Nidyara house, Ananthady post and village, Bantwal taluk-574253, Dakshina Kannada, Karnataka, India</p>
-            <p>Phone: 9740879280</p>
-            <p>Email: gowthamnc10@gmail.com</p>
+            <div class="services-container">
+                <div class="services-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>HTML</h3>
+                </div>
+                <div class="services-box">
+                    <i class='bx bxl-css3'></i>
+                    <h3>CSS</h3>
+                </div>
+                <div class="services-box">
+                    <i class='bx bxl-javascript' ></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="services-box">
+                    <i class='bx bxl-code-alt'></i>
+                    <h3>C</h3>
+                </div>
+            
+                <div class="services-box">
+                    <i class='bx bxl-code-alt' ></i>
+                    <h3>C ++</h3>
+                </div>
+                <div class="services-box">
+                    <i class='bx bxl-code-alt' ></i>
+                    <h3>Python</h3>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio"id="portfolio">
+            <h2 class="heading">Latest<span>Project</span></h2>
+            <div class="portfolio-container">
+                <div class="services-container">
+                    <div class="services-box">
+                        <i class='bx bx-code-alt' class="bx bxl-css3"></i>
+                        <h3>Rock-Paper-Scissor Game</h3>
+                        <div class="social-media">
+                            <a href="https://github.com/Gagan7411082471/stone-paper-scissor"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-container">
+                    <div class="services-box">
+                        <i class='bx bx-code-alt' class="bx bxl-css3"></i>
+                        <h3>Comming soon!!</h3>
+                        <div class="social-media">
+                            <a href="https://github.com/Gagan7411082471"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-container">
+                    <div class="services-box">
+                        <i class='bx bx-code-alt' class="bx bxl-css3"></i>
+                        <h3>Comming soon!!</h3>
+                        <div class="social-media">
+                            <a href="https://github.com/Gagan7411082471"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+        <section class="contact"id="contact">
+            <h2 class="heading">Contact<span>ME!</span></h2>
+
+            <form action="#" name="submit-to-google-sheet">
+                <div class="input-box">
+                    <input type="text" name="Name" placeholder="Full Name">
+                    <input type="email" name="Email Address" placeholder="Email Address">
+                </div>
+                <div class="input-box">
+                    <input type="number" name="Mobile Number"placeholder="Mobile Number">
+                    <input type="text"name="Email Subject" placeholder="Email Subject">
+                </div>
+                <textarea name="Your Message" id="" cols="30" rows="10"placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message"class="btn">
+            </form>
+            <span id="msg"></span>
         </section>
 
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <ul>
-                <li>Computer skill</li>
-                <li>C programming language</li>
-                <li>C++ programming language</li>
-                <li>Java programming language</li>
-                <li>Microsoft Office</li>
-                <li>Photoshop</li>
-            </ul>
-        </section>
+        <footer class="footer">
+            <div class="footer-text">
+                <p class="copy-right">Copyright &copy; 2024 by Gagan | All Rights Reserved.</p>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+            </div>
+        </footer>
 
-        <section id="languages" class="section">
-            <h2>Languages</h2>
-            <ul>
-                <li>English</li>
-                <li>Hindi</li>
-                <li>Kannada</li>
-                <li>Tulu</li>
-            </ul>
-        </section>
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-        <section id="education" class="section">
-            <h2>Education</h2>
-            <p>Vivekananda College of Engineering and Technology, 2023, B.E, 78%</p>
-            <p>Vivekananda PU College Nehru Nagar, Puttur, 2022, 12th, 75%</p>
-            <p>Balavikas English Medium School, Mani, 2020, 10th, 85%</p>
-        </section>
-
-        <section id="additional-info" class="section">
-            <h2>Additional Info</h2>
-            <p>Date of Birth: 25/06/2004</p>
-            <p>Gender: Male</p>
-            <p>Religion: Hindu</p>
-            <p>Marital Status: Single</p>
-            <p>Nationality: Indian</p>
-            <p>Hobbies:Visual aristry,Editing,videography</p>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 N C Gowtham. All rights reserved.</p>
-    </footer>
-</body>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="script.js"></script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzFPVGxI-75Ilkm2z_EMuI9ubPlp8-7dQmMzzdPiIunLPPzj3bcY1ohMdT_DfZ3zPwhTA/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg=document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML="Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+        
+    </body>
 </html>
